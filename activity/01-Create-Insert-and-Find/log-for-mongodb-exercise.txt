@@ -1,0 +1,122 @@
+: poweruser-2:~: command not found
+poweruser-2:activity poweruser$ ls -la
+total 16
+drwxr-xr-x   8 poweruser  staff   272 May 23 18:10 .
+drwxr-xr-x  10 poweruser  staff   340 May 23 18:10 ..
+-rw-r--r--@  1 poweruser  staff  6148 May 23 18:09 .DS_Store
+drwxr-xr-x   6 poweruser  staff   204 May 23 18:10 .idea
+drwxr-xr-x@  3 poweruser  staff   102 May 22 18:20 01-Create-Insert-and-Find
+drwxr-xr-x@  4 poweruser  staff   136 May 23 17:59 02-Starting-With-Mongo
+drwxr-xr-x@  3 poweruser  staff   102 May 22 18:20 03-Update-Delete-and-Drop
+drwxr-xr-x@  3 poweruser  staff   102 May 22 18:20 04-Student-Update-Delete-and-Drop
+poweruser-2:activity poweruser$ mongo
+MongoDB shell version: 3.0.2
+connecting to: test
+Server has startup warnings: 
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] 
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> use lessondb
+switched to db lessondb
+> db
+lessondb
+> db.iWantToGoToThere.insert({"continentdb.iWantToGoToThere.insert({"continent
+... 
+... ": "Africa", "country":"Morocco", "majorcities": ["Casablanca", "Fez", "Marrakech"]})
+2017-05-23T20:50:13.132-0700 E QUERY    SyntaxError: Unexpected identifier
+> db.iWantToGoToThere.insert({"continent": "Africa", "country":"Morocco", "majorcities": ["Casablanca", "Fez", "Marrakech"]})
+WriteResult({ "nInserted" : 1 })
+> db.iWantToGoToThere.find()
+{ "_id" : ObjectId("5925031118405801761cca24"), "continent" : "Africa", "country" : "Morocco", "majorcities" : [ "Casablanca", "Fez", "Marrakech" ] }
+> show collections
+iWantToGoToThere
+system.indexes
+> db.iWantToGoToThere.find().pretty()
+{
+        "_id" : ObjectId("5925031118405801761cca24"),
+        "continent" : "Africa",
+        "country" : "Morocco",
+        "majorcities" : [
+                "Casablanca",
+                "Fez",
+                "Marrakech"
+        ]
+}
+> db.iWantToGoToThere.find({"continent": "Africa"}) 
+{ "_id" : ObjectId("5925031118405801761cca24"), "continent" : "Africa", "country" : "Morocco", "majorcities" : [ "Casablanca", "Fez", "Marrakech" ] }
+> db.iWantToGoToThere.find({"continent": "Africa"}).pretty()
+{
+        "_id" : ObjectId("5925031118405801761cca24"),
+        "continent" : "Africa",
+        "country" : "Morocco",
+        "majorcities" : [
+                "Casablanca",
+                "Fez",
+                "Marrakech"
+        ]
+}
+> db.iWantToGoToThere.find({"country": "Morocco"}).pretty()
+{
+        "_id" : ObjectId("5925031118405801761cca24"),
+        "continent" : "Africa",
+        "country" : "Morocco",
+        "majorcities" : [
+                "Casablanca",
+                "Fez",
+                "Marrakech"
+        ]
+}
+> db.iWantToGoToThere.find({_id:[COPY AN OBJECTID FROM THE PREVIOUS FIND RESULTS]});
+2017-05-23T20:53:47.308-0700 E QUERY    SyntaxError: Unexpected identifier
+> By id: db.iWantToGoToThere.find({_id:[COPY AN OBJECTID FROM THE PREVIOUS FIND RESULTS]});
+2017-05-23T20:54:09.964-0700 E QUERY    SyntaxError: Unexpected identifier
+> db.iWantToGoToThere.find({_id:[5925031118405801761cca24]});
+2017-05-23T20:54:59.487-0700 E QUERY    SyntaxError: Unexpected token ILLEGAL
+> By id: db.iWantToGoToThere.find({_id:[5925031118405801761cca24]});
+2017-05-23T20:55:15.169-0700 E QUERY    SyntaxError: Unexpected identifier
+> db.iWantToGoToThere.find({_id:5925031118405801761cca24});
+2017-05-23T20:55:34.577-0700 E QUERY    SyntaxError: Unexpected token ILLEGAL
+> By id: db.iWantToGoToThere.find({_id:5925031118405801761cca24});
+2017-05-23T20:55:45.329-0700 E QUERY    SyntaxError: Unexpected identifier
+> db.iWantToGoToThere.find({"_id":"5925031118405801761cca24"});
+> By id: db.iWantToGoToThere.find({"_id":"5925031118405801761cca24"});
+2017-05-23T20:57:30.358-0700 E QUERY    SyntaxError: Unexpected identifier
+> use classroom
+switched to db classroom
+> db
+classroom
+> db.students.insert({'name': 'Jackie', 'hobbies': ['pets', 'programming'], 'os': 'linux'})
+WriteResult({ "nInserted" : 1 })
+> db.students.insert({'name': 'Tom', 'hobbies': ['movies', 'programming'], 'os': 'mac'})
+WriteResult({ "nInserted" : 1 })
+> db.students.find().pretty()
+{
+        "_id" : ObjectId("5925068c18405801761cca25"),
+        "name" : "Jackie",
+        "hobbies" : [
+                "pets",
+                "programming"
+        ],
+        "os" : "linux"
+}
+{
+        "_id" : ObjectId("592506b218405801761cca26"),
+        "name" : "Tom",
+        "hobbies" : [
+                "movies",
+                "programming"
+        ],
+        "os" : "mac"
+}
+> db.students.find('os': 'mac').pretty()
+2017-05-23T21:07:34.557-0700 E QUERY    SyntaxError: Unexpected token :
+> db.students.find({'os': 'mac'}).pretty()
+{
+        "_id" : ObjectId("592506b218405801761cca26"),
+        "name" : "Tom",
+        "hobbies" : [
+                "movies",
+                "programming"
+        ],
+        "os" : "mac"
+}
+> 

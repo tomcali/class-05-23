@@ -1,0 +1,717 @@
+Last login: Tue May 23 17:38:47 on console
+-bash: poweruser-2:~: command not found
+poweruser-2:~ poweruser$ git clone git@github.com:tomcali/class-05-23.git
+Cloning into 'class-05-23'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+poweruser-2:~ poweruser$ cd class-05-23
+poweruser-2:class-05-23 poweruser$ ls -la
+total 16
+drwxr-xr-x    5 poweruser  staff   170 May 23 17:44 .
+drwxr-xr-x+ 175 poweruser  staff  5950 May 23 17:44 ..
+drwxr-xr-x   13 poweruser  staff   442 May 23 17:44 .git
+-rw-r--r--    1 poweruser  staff   884 May 23 17:44 .gitignore
+-rw-r--r--    1 poweruser  staff    45 May 23 17:44 README.md
+poweruser-2:class-05-23 poweruser$ mkdir activities
+poweruser-2:class-05-23 poweruser$ rmdir activities
+poweruser-2:class-05-23 poweruser$ ls -la
+total 16
+drwxr-xr-x    5 poweruser  staff   170 May 23 17:45 .
+drwxr-xr-x+ 175 poweruser  staff  5950 May 23 17:44 ..
+drwxr-xr-x   13 poweruser  staff   442 May 23 17:44 .git
+-rw-r--r--    1 poweruser  staff   884 May 23 17:44 .gitignore
+-rw-r--r--    1 poweruser  staff    45 May 23 17:44 README.md
+poweruser-2:class-05-23 poweruser$ mkdir activity
+poweruser-2:class-05-23 poweruser$ cd activity
+poweruser-2:activity poweruser$ ls -la
+total 0
+drwxr-xr-x  2 poweruser  staff   68 May 23 17:45 .
+drwxr-xr-x  6 poweruser  staff  204 May 23 17:45 ..
+poweruser-2:activity poweruser$ touch 0-work.js 1-work.js 2-work.js 3-work.js 4-work.js
+poweruser-2:activity poweruser$ ls -la
+total 0
+drwxr-xr-x  7 poweruser  staff  238 May 23 17:46 .
+drwxr-xr-x  6 poweruser  staff  204 May 23 17:45 ..
+-rw-r--r--  1 poweruser  staff    0 May 23 17:46 0-work.js
+-rw-r--r--  1 poweruser  staff    0 May 23 17:46 1-work.js
+-rw-r--r--  1 poweruser  staff    0 May 23 17:46 2-work.js
+-rw-r--r--  1 poweruser  staff    0 May 23 17:46 3-work.js
+-rw-r--r--  1 poweruser  staff    0 May 23 17:46 4-work.js
+poweruser-2:activity poweruser$ cd 
+poweruser-2:~ poweruser$ git clone https://github.com/OSP123/TravelSecure-Mongo.git
+Cloning into 'TravelSecure-Mongo'...
+remote: Counting objects: 151, done.
+remote: Compressing objects: 100% (110/110), done.
+remote: Total 151 (delta 35), reused 149 (delta 34), pack-reused 0
+Receiving objects: 100% (151/151), 914.66 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (35/35), done.
+poweruser-2:~ poweruser$ cd TravelSecure-Mongo
+poweruser-2:TravelSecure-Mongo poweruser$ ls -la
+total 64
+drwxr-xr-x   16 poweruser  staff   544 May 23 18:54 .
+drwxr-xr-x+ 176 poweruser  staff  5984 May 23 18:54 ..
+drwxr-xr-x   13 poweruser  staff   442 May 23 18:54 .git
+-rwxr-xr-x    1 poweruser  staff  1094 May 23 18:54 LICENSE
+-rwxr-xr-x    1 poweruser  staff   189 May 23 18:54 README.md
+drwxr-xr-x    3 poweruser  staff   102 May 23 18:54 bin
+drwxr-xr-x    7 poweruser  staff   238 May 23 18:54 config
+drwxr-xr-x    6 poweruser  staff   204 May 23 18:54 controllers
+-rwxr-xr-x    1 poweruser  staff  1491 May 23 18:54 gulpfile.js
+-rwxr-xr-x    1 poweruser  staff  7734 May 23 18:54 index.html
+drwxr-xr-x    4 poweruser  staff   136 May 23 18:54 models
+-rw-r--r--    1 poweruser  staff  1246 May 23 18:54 package.json
+drwxr-xr-x    4 poweruser  staff   136 May 23 18:54 public
+-rw-r--r--    1 poweruser  staff   553 May 23 18:54 routes.js
+-rw-r--r--    1 poweruser  staff  2730 May 23 18:54 server.js
+drwxr-xr-x    9 poweruser  staff   306 May 23 18:54 views
+poweruser-2:TravelSecure-Mongo poweruser$ cd package.json
+-bash: cd: package.json: Not a directory
+poweruser-2:TravelSecure-Mongo poweruser$ cat package.json
+{
+  "name": "startbootstrap-grayscale",
+  "title": "Grayscale",
+  "version": "3.3.7+1",
+  "homepage": "http://startbootstrap.com/template-overviews/grayscale",
+  "author": "Start Bootstrap",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.11.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.2",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.10.0",
+    "morgan": "^1.8.1",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "engines": {
+    "node": "7.8.0"
+  }
+}
+poweruser-2:TravelSecure-Mongo poweruser$ cd
+poweruser-2:~ poweruser$ ls -la
+total 267960
+drwxr-xr-x+  176 poweruser  staff      5984 May 23 18:54 .
+drwxr-xr-x     7 root       admin       238 Jan  7 18:12 ..
+-r--------     1 poweruser  staff         7 Jan  7 17:46 .CFUserTextEncoding
+-rw-r--r--@    1 poweruser  staff    116740 May 23 18:10 .DS_Store
+drwx------     2 poweruser  staff        68 Jan  3 08:12 .QtWebEngineProcess
+-rw-r--r--     1 poweruser  staff      1014 Apr 15 12:01 .Rapp.history
+-rw-r--r--     1 poweruser  staff      1004 May 21 18:11 .Rhistory
+drwx------     2 poweruser  staff        68 Jan  3 08:12 .Spyder
+drwx------   131 poweruser  staff      4454 May 23 18:09 .Trash
+drwxr-xr-x     4 poweruser  staff       136 May 10 17:38 .anaconda
+drwxr-xr-x     4 poweruser  staff       136 May 10 17:38 .astropy
+drwxr-xr-x    16 poweruser  staff       544 May 10 17:38 .atom
+-rw-------     1 poweruser  staff      8927 May 23 14:41 .bash_history
+-rw-r--r--@    1 poweruser  staff       997 Apr 23 15:44 .bash_profile
+-rw-r--r--@    1 poweruser  staff       515 Feb 18  2016 .bash_profile-anaconda.bak
+drwx------   645 poweruser  staff     21930 May 23 17:43 .bash_sessions
+drwxr-xr-x     5 poweruser  staff       170 Jan  1 09:27 .cache
+drwx------    19 poweruser  staff       646 May 10 17:38 .canopy
+drwxr-xr-x     5 poweruser  staff       170 May 10 17:38 .conda
+drwxr-xr-x     5 poweruser  staff       170 May 10 17:38 .config
+drwxr-xr-x     2 poweruser  staff        68 Jul 16  2015 .continuum
+-rw-r--r--     1 poweruser  staff      4663 Apr 23 15:25 .dbshell
+drwx------    12 poweruser  staff       408 Feb  8 10:26 .dropbox
+-rw-r--r--     1 poweruser  staff      2560 Apr 29 11:17 .enstaller4rc
+drwx------     7 poweruser  staff       238 Feb 26 22:14 .filezilla
+-rw-r--r--     1 poweruser  staff        52 Jan 12 23:05 .gitconfig
+drwxr-xr-x     7 poweruser  staff       238 May 10 17:38 .ipython
+drwxr-xr-x     3 poweruser  staff       102 Jul 10  2016 .jupyter
+drwxr-xr-x     4 poweruser  staff       136 May 10 17:38 .local
+drwxr-xr-x     6 poweruser  staff       204 May 10 17:38 .matplotlib
+-rw-------     1 poweruser  staff         0 Apr 29  2015 .mongorc.js
+-rw-------     1 poweruser  staff       945 May  6 11:06 .mysql_history
+-rw-------     1 poweruser  staff       198 May 16 21:10 .netrc
+drwxr-xr-x     5 poweruser  staff       170 May 10 17:38 .node-gyp
+-rw-------     1 poweruser  staff      1109 Apr  8 13:39 .node_repl_history
+drwxr-xr-x  1150 poweruser  staff     39100 May 19 16:12 .npm
+drwxr-xr-x     4 poweruser  staff       136 Mar 27  2016 .oracle_jre_usage
+-rw-r--r--     1 poweruser  staff       250 Nov 22  2014 .profile
+drwxr-xr-x    21 poweruser  staff       714 May 10 17:38 .pyenv
+-rw-------     1 poweruser  staff         0 Feb  5 04:39 .python_history
+drwxr-xr-x    15 poweruser  staff       510 May 21 18:11 .rstudio-desktop
+drwxr-xr-x    19 poweruser  staff       646 May 10 17:38 .spyder-py3
+drwxr-xr-x    18 poweruser  staff       612 May 10 17:38 .spyder2-py3
+drwx------     7 poweruser  staff       238 Dec 31 11:24 .ssh
+drwxr-xr-x     7 poweruser  staff       238 May 10 17:38 .subversion
+drwxr-xr-x     4 poweruser  staff       136 May 10 17:38 .swt
+-rw-r--r--     1 poweruser  staff      9949 May  4 21:05 .v8flags.5.5.372.43.66554110bc63a8d025b738f96e4597c4.json
+-rw-------     1 poweruser  staff       910 May 14 02:59 .viminfo
+drwxr-xr-x     3 poweruser  staff       102 May 13 06:48 .vue-templates
+drwx------     5 poweruser  staff       170 Oct 26  2015 Applications
+drwxr-xr-x    19 poweruser  staff       646 Feb 11 04:53 Bootstrap-Portfolio
+drwx------+   72 poweruser  staff      2448 May 23 20:24 Desktop
+drwx------+   20 poweruser  staff       680 May 17 08:40 Documents
+drwx------+  103 poweruser  staff      3502 May 23 17:57 Downloads
+drwx------@   29 poweruser  staff       986 Apr 29 21:44 Dropbox
+drwxr-xr-x     5 poweruser  staff       170 Feb  6 08:47 Dropbox-personal
+drwxr-xr-x     9 poweruser  staff       306 Mar 15 18:25 GifTastic
+drwxr-xr-x     5 poweruser  staff       170 Jan 11 17:11 JetBrains
+drwxr-xr-x    17 poweruser  staff       578 May 11 12:52 Learning-Vuejs-2
+drwx------@   73 poweruser  staff      2482 Feb  8 10:26 Library
+drwx------+    3 poweruser  staff       102 Nov 19  2014 Movies
+drwx------+    7 poweruser  staff       238 Nov 22  2016 Music
+drwx------+    3 poweruser  staff       102 Nov 19  2014 Pictures
+drwxr-xr-x+    6 poweruser  staff       204 Nov 22  2016 Public
+drwxr-xr-x    14 poweruser  staff       476 Feb 11 02:10 Responsive-Portfolio
+drwxr-xr-x    18 poweruser  staff       612 Mar 27 18:27 Ride-Care
+drwxr-xr-x    11 poweruser  staff       374 Apr  1 09:47 Ride-Care-App
+drwxr-xr-x     9 poweruser  staff       306 Mar 27 16:22 Ride-Care-App-Old
+drwxr-xr-x     9 poweruser  staff       306 Mar 20 22:53 Ride-Care-App-Penultimate
+drwxr-xr-x+    3 poweruser  staff       102 Jan  2  2016 Sites
+drwxr-xr-x     9 poweruser  staff       306 Mar 22 18:21 Train-Time
+drwxr-xr-x    16 poweruser  staff       544 May 23 18:54 TravelSecure-Mongo
+drwxr-xr-x     7 poweruser  staff       238 Mar  8 18:12 TriviaGame
+drwxr-xr-x    14 poweruser  staff       476 May 20 07:17 VuePoint
+drwxr-xr-x    15 poweruser  staff       510 May 21 07:12 VuePoint-Deploy
+drwxr-xr-x    11 poweruser  staff       374 May 20 09:11 VuePoint-Present
+drwxr-xr-x    25 poweruser  staff       850 May 10 17:38 anaconda
+drwxr-xr-x     4 poweruser  staff       136 Feb  6 07:42 b6a-dev-v001
+drwxr-xr-x    17 poweruser  staff       578 Mar  1 11:22 b6a-devils-rwjbarnabas
+-rw-r--r--     1 poweruser  staff   6157448 Mar  1 11:25 b6a-devils-rwjbarnabas.zip
+drwxr-xr-x     7 poweruser  staff       238 Feb 17 23:04 bad-again-again-hangman-game
+drwxr-xr-x     7 poweruser  staff       238 Feb 17 20:32 bad-again-hangman-game
+drwxr-xr-x     7 poweruser  staff       238 Feb 15 19:57 bad-hangman-game
+drwxr-xr-x     7 poweruser  staff       238 Feb 18 00:59 bad-yikes-hangman-game
+-rw-r--r--@    1 poweruser  staff       781 Apr 23 14:30 bash.profile-before-mongo
+-rw-r--r--@    1 poweruser  staff       930 Apr 23 14:43 bash.profile-before-mongo-local-install
+-rw-r--r--     1 poweruser  staff       143 Jul 15  2015 bash_profile_backup
+-rw-r--r--@    1 poweruser  staff       730 Feb  6 08:41 bash_profile_backup_2017_02_06
+-rw-r--r--@    1 poweruser  staff       606 Feb  6 14:47 bash_profile_backup_2017_02_06.txt
+-rw-r--r--@    1 poweruser  staff       730 Feb  6 14:48 bash_profile_backup_2017_02_06_rev.txt
+-rw-r--r--@    1 poweruser  staff       296 Jul 15  2015 bash_profile_new_problem_child
+drwxr-xr-x     5 poweruser  staff       170 May 10 17:39 biclustering-v001
+drwxr-xr-x     5 poweruser  staff       170 Jan 26 18:05 bootcamp-2
+drwxr-xr-x    13 poweruser  staff       442 Jan 28 13:17 bootcamp-3
+drwxr-xr-x    14 poweruser  staff       476 Jan  7 21:10 bulk_files
+drwxr-xr-x     9 poweruser  staff       306 Feb  2 19:04 class-02-02
+drwxr-xr-x    24 poweruser  staff       816 Feb  4 13:17 class-02-04
+drwxr-xr-x     7 poweruser  staff       238 Feb  7 17:36 class-02-07
+drwxr-xr-x     7 poweruser  staff       238 Mar  2 17:44 class-03-02-work
+drwxr-xr-x    10 poweruser  staff       340 Mar 14 18:51 class-03-04-work
+drwxr-xr-x     9 poweruser  staff       306 Mar  7 17:07 class-03-07-work
+drwxr-xr-x     9 poweruser  staff       306 Mar  9 17:24 class-03-09-work
+drwxr-xr-x    10 poweruser  staff       340 Mar 11 13:23 class-03-11-work
+drwxr-xr-x    13 poweruser  staff       442 Mar 14 18:56 class-03-14-work
+drwxr-xr-x    11 poweruser  staff       374 Mar 28 18:04 class-03-28-work
+drwxr-xr-x     9 poweruser  staff       306 Apr  1 09:50 class-03-30-work
+drwxr-xr-x     8 poweruser  staff       272 Apr  1 11:27 class-04-01-work
+drwxr-xr-x    19 poweruser  staff       646 Apr  7 22:31 class-04-04
+drwxr-xr-x    12 poweruser  staff       408 Apr  6 19:25 class-04-06
+drwxr-xr-x    15 poweruser  staff       510 May 10 17:39 class-04-08
+drwxr-xr-x    16 poweruser  staff       544 Apr 11 21:27 class-04-11
+drwxr-xr-x     9 poweruser  staff       306 Apr 13 17:19 class-04-13
+drwxr-xr-x    11 poweruser  staff       374 Apr 17 18:08 class-04-15
+drwxr-xr-x    13 poweruser  staff       442 Apr 17 20:43 class-04-17
+drwxr-xr-x    12 poweruser  staff       408 Apr 20 21:27 class-04-20
+drwxr-xr-x    18 poweruser  staff       612 Apr 25 21:24 class-04-25
+drwxr-xr-x    19 poweruser  staff       646 Apr 28 00:00 class-04-27
+drwxr-xr-x    16 poweruser  staff       544 Apr 29 14:00 class-04-29
+drwxr-xr-x    26 poweruser  staff       884 May  2 20:46 class-05-02
+drwxr-xr-x    26 poweruser  staff       884 May  6 10:23 class-05-04
+drwxr-xr-x    20 poweruser  staff       680 May 12 20:53 class-05-06
+drwxr-xr-x    10 poweruser  staff       340 May 23 18:10 class-05-23
+drwxr-xr-x    16 poweruser  staff       544 May  6 07:17 daily-diet
+drwxr-xr-x    10 poweruser  staff       340 Apr 22 08:07 damazon
+drwxr-xr-x     4 poweruser  staff       136 Nov 22  2016 data
+drwxr-xr-x     4 poweruser  staff       136 Feb 26 15:12 dev
+drwxr-xr-x    20 poweruser  staff       680 Mar  3 17:30 elastic-enron-work
+drwxr-xr-x    32 poweruser  staff      1088 Mar  5 07:09 examples
+drwxr-xr-x    13 poweruser  staff       442 Apr 15 00:57 flashcard-generator
+drwxr-xr-x    11 poweruser  staff       374 Apr 28 14:27 ford
+drwxr-xr-x    12 poweruser  staff       408 Apr 29 02:34 friend-finder
+drwxr-xr-x    11 poweruser  staff       374 Apr  9 19:28 getting-started-node
+drwxr-xr-x   369 poweruser  staff     12546 Nov 22  2016 git
+-rw-------     1 poweruser  staff      1679 Dec 31 10:31 git_tomcali_rsa
+-rw-r--r--     1 poweruser  staff       401 Dec 31 10:31 git_tomcali_rsa.pub
+drwxr-xr-x     7 poweruser  staff       238 Feb 18 02:01 hangman-game
+drwxr-xr-x     7 poweruser  staff       238 Feb 18 02:01 hangman-team
+drwxr-xr-x     6 poweruser  staff       204 Jan 29 08:12 hw-wireframe
+drwxr-xr-x    15 poweruser  staff       510 Apr  7 20:12 liri-node-app
+drwxr-xr-x    26 poweruser  staff       884 Nov 22  2016 lyra
+drwxr-xr-x    23 poweruser  staff       782 May 18 12:59 mern-full
+drwxr-xr-x    25 poweruser  staff       850 Apr 23 08:50 mern-full-beginning
+drwxr-xr-x    25 poweruser  staff       850 Apr 23 10:11 mern-full-day-two-midday-with-notes
+drwxr-xr-x    25 poweruser  staff       850 Apr 23 08:50 mern-full-day-two-start
+drwxr-xr-x    23 poweruser  staff       782 Apr 22 14:08 mern-full-end-first-day
+drwxr-xr-x    26 poweruser  staff       884 Apr 25 18:48 mern-full-end-of-class
+drwxr-xr-x    21 poweruser  staff       714 Apr 22 09:10 mern-full-initial-backup
+drwxr-xr-x    23 poweruser  staff       782 Apr 22 15:24 mern-full-up-to-lunch
+drwxr-xr-x     4 poweruser  staff       136 Apr 22 08:14 mern-stack-course
+drwxr-xr-x     6 poweruser  staff       204 Feb 13 13:43 model-automation
+drwxr-xr-x    10 poweruser  staff       340 Apr 23 14:39 mongodb
+drwxr-xr-x     7 poweruser  staff       238 Nov 22  2016 mongodb-osx-x86_64-3.0.2
+-rw-r--r--     1 poweruser  staff  48602990 Apr 28  2015 mongodb-osx-x86_64-3.0.2.tgz
+drwxr-xr-x     7 poweruser  staff       238 Apr 23 14:38 mongodb-osx-x86_64-3.4.2
+-rw-r--r--     1 poweruser  staff  82068786 Apr 23 14:38 mongodb-osx-x86_64-3.4.2.tgz
+drwxr-xr-x     7 poweruser  staff       238 Nov 22  2016 mtpaseries
+drwxr-xr-x    13 poweruser  staff       442 May 18 19:36 node-js-getting-started
+-rw-r--r--     1 poweruser  staff       941 Apr 23 16:32 npm-debug.log
+drwxr-xr-x     2 poweruser  staff        68 Jan 15 21:21 output
+drwxr-xr-x   135 poweruser  staff      4590 Jan 18 21:23 pelican-plugins
+drwxr-xr-x     4 poweruser  staff       136 Apr 14 18:05 primitives-objects-demo
+drwxr-xr-x    15 poweruser  staff       510 Apr  7 22:54 pro-mern-stack
+drwxr-xr-x    15 poweruser  staff       510 Apr  7 22:54 pro-mern-stack-original
+drwxr-xr-x     7 poweruser  staff       238 Jan 26 20:38 test-git
+-rw-r--r--     1 poweruser  staff    116743 May 27  2015 test1.csv
+drwxr-xr-x     3 poweruser  staff       102 May  4 20:28 testNode
+drwxr-xr-x     5 poweruser  staff       170 May  4 19:39 test_dir
+drwxr-xr-x     8 poweruser  staff       272 Feb  4 15:28 tryit
+drwxr-xr-x    20 poweruser  staff       680 May 19 15:30 vue-deploy-demo
+drwxr-xr-x     7 poweruser  staff       238 Mar  7 17:43 week-4-game
+drwxr-xr-x     6 poweruser  staff       204 Nov 22  2016 wekafiles
+drwxr-xr-x     4 poweruser  staff       136 Apr 30  2015 x_enron
+drwxr-xr-x    17 poweruser  staff       578 May 11 12:52 z-Learning-Vuejs-2-Original
+drwxr-xr-x    13 poweruser  staff       442 May 18 14:58 z-VuePoint
+drwxr-xr-x    15 poweruser  staff       510 May 19 16:21 z-VuePoint-Deploy-backup
+drwxr-xr-x    15 poweruser  staff       510 May 19 19:08 z-VuePoint-backup-sat-morning
+poweruser-2:~ poweruser$ brew install mongodb --with-openssl
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+allure                         cockroach                      percona-server-mongodb
+angular-cli                    dcos-cli                       pilosa
+antlr4-cpp-runtime             docker-machine-driver-vultr    twine-pypi
+audacious                      goad                           wabt
+bdsup2sub                      mono-libgdiplus                warp
+chronograf                     moodbar                        zeromq@4.1
+==> Updated Formulae
+aalib                          gspell                         pdf2svg
+ammonite-repl                  gtk+3                          pdftoedn
+amqp-cpp                       gtk-mac-integration            pegtl
+antigen                        gtk-vnc                        perl-build
+antlr                          gtksourceview                  pgformatter
+apache-archiva                 gtksourceview3                 planck
+apache-brooklyn-cli            gtksourceviewmm                plantuml
+apache-flink                   gucharmap                      pmd
+app-engine-java                gws                            ponyc
+arangodb                       halibut                        poppler
+archi-steam-farm               heroku ✔                       postgresql
+aria2                          homebank                       postgresql@9.4
+artifactory                    hugo                           postgresql@9.5
+at-spi2-atk                    hyper                          ppsspp
+at-spi2-core                   ibex                           pre-commit
+aws-sdk-cpp                    imagemagick                    prest
+awscli                         imagemagick@6                  prometheus
+azure-cli                      immortal                       protobuf-swift
+babl                           infer                          psqlodbc
+bandcamp-dl                    influxdb                       pwntools
+bash-preexec                   inspircd                       pyenv
+bit                            ipfs                           pygtksourceview
+bitlbee                        jasper                         pyinvoke
+bitrise                        jbig2dec                       quantlib
+bluepill                       jenkins                        radare2
+bmake                          jetty                          rancher-cli
+buildifier                     jetty-runner                   rancher-compose
+caddy                          jfrog-cli-go                   redis
+carthage                       jlog                           redpen
+certbot                        jo                             ripgrep
+certigo                        jsonschema2pojo                rkflashtool
+cfengine                       juise                          rocksdb
+chakra                         kafkacat                       roswell
+citus                          kapacitor                      rrdtool
+cli53                          kobalt                         s-search
+closure-compiler               kops                           s3fs
+clutter                        kubernetes-cli                 saltstack
+cnats                          kubernetes-helm                sane-backends
+cockatrice                     latex2rtf                      scala@2.11
+coffeescript                   leaps                          scw
+consul                         libaacs                        sdl_ttf
+consul-template                libatomic_ops                  serveit
+convox                         libcouchbase                   shc
+corebird                       libdc1394                      shellshare
+cppcheck                       libetpan                       sjk
+creduce                        libfabric                      skinny
+datomic                        libgit2-glib                   snapraid
+davix                          libglade                       sngrep
+dbt                            libglademm                     sonar-scanner
+deis                           libgnomecanvas                 source-to-image
+dhall-json                     libgnomecanvasmm               sourcekitten
+diff-pdf                       libhttpseverywhere             sphinx-doc ✔
+diffoscope                     libmaxminddb                   sslscan
+diffutils                      libmemcached                   sslyze
+digdag                         libphonenumber                 streamlink
+django-completion              libproxy                       subversion
+dnscrypt-proxy                 libslax                        svtplay-dl
+docker                         libsoup                        swi-prolog
+docker-completion              libtiff                        swiftformat
+docker-compose                 libusb-compat                  swiftgen
+docker-compose-completion      libvirt                        syncthing
+doctl                          libvorbis                      sysbench
+dropbear                       linkerd                        sysdig
+duck                           logrotate                      tarantool
+elasticsearch                  logstash                       tbb
+elixir                         logtalk                        tcpreplay
+etcd                           lumo                           tcptraceroute
+ettercap                       luvit                          tee-clc
+exa                            macvim                         telegraf
+exiftool                       make                           tenyr
+fabio                          makensis                       terminal-notifier
+fades                          mariadb                        terraform
+ffmpeg                         menhir                         terragrunt
+filebeat                       metabase                       testssl
+fio                            metricbeat                     thefuck
+firebase-cli                   mikutter                       tig
+fits                           mingw-w64                      tiger-vnc
+flatcc                         minicom                        tippecanoe
+flex                           minidlna                       todoman
+flint-checker                  minimal-racket                 tomcat
+flow                           minio                          tor
+fluent-bit                     miniupnpc                      traildb
+folly                          minizinc                       tth
+fonttools                      mkvtoolnix                     twarc
+freeimage                      mldonkey                       typescript
+freetds                        monax                          uncrustify
+freetype                       mongo-c-driver                 unrar
+fwup                           mongoose                       upx
+gammu                          mono                           urbit
+gauge                          mpd                            urh
+geoip                          mps-youtube                    vagrant-completion
+geoserver                      mypy                           vamp-plugin-sdk
+gexiv2                         mysql-connector-c++            varnish
+gist                           mysqltuner                     varnish@4
+git                            nagios                         vault
+git-annex                      nano                           vice
+git-extras                     nativefier                     vim
+git-flow-avh                   neatvi                         vte3
+git-lfs                        nginx                          watchexec
+git-town                       nifi                           webpack
+gitg                           nim                            weechat
+gitlab-ci-multi-runner         nnn                            winetricks
+gjs                            npth                           wireguard-tools
+glbinding                      nvc                            wolfssl
+glib                           ode                            xmake
+global                         open-mpi                       xrootd
+glog                           open-scene-graph               xsv
+gmime                          opencore-amr                   yadm
+gnome-builder                  openshift-cli                  yara
+gnome-recipes                  openvpn                        yarn
+gnu-typist                     osc                            yaz
+gnupg                          packetbeat                     ykpers
+gnutls                         paket                          youtube-dl
+gobject-introspection          pango                          yubico-piv-tool
+gofabric8                      par2                           zabbix
+goocanvas                      parallel                       zsh-autosuggestions
+grails@2.5                     pass                           zsh-completions
+graphite2                      passenger                      zstd
+grc                            pcre2
+grpc                           pdf2htmlex
+==> Deleted Formulae
+blucat                         dvtm                           libtess2
+
+==> Installing dependencies for mongodb: openssl
+==> Installing mongodb dependency: openssl
+==> Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2k.sierra.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring openssl-1.0.2k.sierra.bottle.tar.gz
+==> Using the sandbox
+==> Caveats
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/openssl/lib
+    CPPFLAGS: -I/usr/local/opt/openssl/include
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.2k: 1,704 files, 12.1MB
+Warning: mongodb: this formula has no --with-openssl option so it will be ignored!
+==> Installing mongodb 
+==> Downloading https://homebrew.bintray.com/bottles/mongodb-3.4.4.sierra.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring mongodb-3.4.4.sierra.bottle.tar.gz
+==> Caveats
+To have launchd start mongodb now and restart at login:
+  brew services start mongodb
+Or, if you don't want/need a background service you can just run:
+  mongod --config /usr/local/etc/mongod.conf
+==> Summary
+🍺  /usr/local/Cellar/mongodb/3.4.4: 18 files, 266.3MB
+poweruser-2:~ poweruser$ cd /
+poweruser-2:/ poweruser$ ls -la
+total 69
+drwxr-xr-x    37 root       wheel   1326 May 23 17:38 .
+drwxr-xr-x    37 root       wheel   1326 May 23 17:38 ..
+-rw-rw-r--     1 root       admin  10244 May 13 12:25 .DS_Store
+d--x--x--x     9 root       wheel    306 May 23 17:38 .DocumentRevisions-V100
+drwxr-xr-x+    3 root       wheel    102 Jan 12 23:28 .MobileBackups
+drwxr-xr-x     2 root       wheel     68 Dec 12  2014 .PKInstallSandboxManager
+drwxr-xr-x     2 root       wheel     68 Jun 13  2014 .PKInstallSandboxManager (from old Mac)
+drwxr-xr-x@    2 root       wheel     68 Jan 15 20:03 .PKInstallSandboxManager-SystemSoftware
+drwx------     5 root       admin    170 Jan  7 15:26 .Spotlight-V100
+d-wx-wx-wt     2 root       wheel     68 Jan  7 12:46 .Trashes
+srwxrwxrwx     1 root       wheel      0 May 23 17:38 .dbfseventsd
+----------     1 root       admin      0 Sep 28  2016 .file
+drwx------  1738 root       admin  59092 May 23 19:17 .fseventsd
+drwxr-xr-x@    2 root       wheel     68 Jan  7 17:31 .vol
+drwxrwxr-x+  208 root       admin   7072 May 18 10:45 Applications
+drwxrwxr-x     7 root       admin    238 Jan  7 18:11 Incompatible Software
+drwxr-xr-x+   75 root       wheel   2550 Jan  7 17:37 Library
+drwxr-xr-x@    2 root       wheel     68 Jan  7 17:31 Network
+drwxr-xr-x@    4 root       wheel    136 Jan  7 17:25 System
+drwxr-xr-x     7 root       admin    238 Jan  7 18:12 Users
+drwxr-xr-x@    4 root       wheel    136 May 23 17:38 Volumes
+drwxr-xr-x    23 poweruser  staff    782 Jan  2 19:04 anaconda
+drwxr-xr-x@   38 root       wheel   1292 Dec 13 01:56 bin
+drwxrwxr-t@    2 root       admin     68 Jan  7 17:31 cores
+dr-xr-xr-x     3 root       wheel   4196 May 23 17:38 dev
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 etc -> private/etc
+dr-xr-xr-x     2 root       wheel      1 May 23 17:43 home
+-rw-r--r--@    1 root       wheel    313 Sep 23  2016 installer.failurerequests
+dr-xr-xr-x     2 root       wheel      1 May 23 17:43 net
+drwxr-xr-x@    3 root       wheel    102 Aug 11  2014 opt
+drwxr-xr-x@    6 root       wheel    204 Jan  7 17:31 private
+drwxr-xr-x@   63 root       wheel   2142 Jan  7 17:30 sbin
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 tmp -> private/tmp
+drwxr-xr-x@    9 root       wheel    306 Jan  7 17:38 usr
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 var -> private/var
+poweruser-2:/ poweruser$ sudo mkdir /data/db
+Password:
+mkdir: /data: No such file or directory
+poweruser-2:/ poweruser$ cd
+poweruser-2:~ poweruser$ sudo mkdir /data/db
+mkdir: /data: No such file or directory
+poweruser-2:~ poweruser$ cd /
+poweruser-2:/ poweruser$ ls -la
+total 69
+drwxr-xr-x    37 root       wheel   1326 May 23 17:38 .
+drwxr-xr-x    37 root       wheel   1326 May 23 17:38 ..
+-rw-rw-r--     1 root       admin  10244 May 13 12:25 .DS_Store
+d--x--x--x     9 root       wheel    306 May 23 17:38 .DocumentRevisions-V100
+drwxr-xr-x+    3 root       wheel    102 Jan 12 23:28 .MobileBackups
+drwxr-xr-x     2 root       wheel     68 Dec 12  2014 .PKInstallSandboxManager
+drwxr-xr-x     2 root       wheel     68 Jun 13  2014 .PKInstallSandboxManager (from old Mac)
+drwxr-xr-x@    2 root       wheel     68 Jan 15 20:03 .PKInstallSandboxManager-SystemSoftware
+drwx------     5 root       admin    170 Jan  7 15:26 .Spotlight-V100
+d-wx-wx-wt     2 root       wheel     68 Jan  7 12:46 .Trashes
+srwxrwxrwx     1 root       wheel      0 May 23 17:38 .dbfseventsd
+----------     1 root       admin      0 Sep 28  2016 .file
+drwx------  1738 root       admin  59092 May 23 19:17 .fseventsd
+drwxr-xr-x@    2 root       wheel     68 Jan  7 17:31 .vol
+drwxrwxr-x+  208 root       admin   7072 May 18 10:45 Applications
+drwxrwxr-x     7 root       admin    238 Jan  7 18:11 Incompatible Software
+drwxr-xr-x+   75 root       wheel   2550 Jan  7 17:37 Library
+drwxr-xr-x@    2 root       wheel     68 Jan  7 17:31 Network
+drwxr-xr-x@    4 root       wheel    136 Jan  7 17:25 System
+drwxr-xr-x     7 root       admin    238 Jan  7 18:12 Users
+drwxr-xr-x@    4 root       wheel    136 May 23 17:38 Volumes
+drwxr-xr-x    23 poweruser  staff    782 Jan  2 19:04 anaconda
+drwxr-xr-x@   38 root       wheel   1292 Dec 13 01:56 bin
+drwxrwxr-t@    2 root       admin     68 Jan  7 17:31 cores
+dr-xr-xr-x     3 root       wheel   4196 May 23 17:38 dev
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 etc -> private/etc
+dr-xr-xr-x     2 root       wheel      1 May 23 17:43 home
+-rw-r--r--@    1 root       wheel    313 Sep 23  2016 installer.failurerequests
+dr-xr-xr-x     2 root       wheel      1 May 23 17:43 net
+drwxr-xr-x@    3 root       wheel    102 Aug 11  2014 opt
+drwxr-xr-x@    6 root       wheel    204 Jan  7 17:31 private
+drwxr-xr-x@   63 root       wheel   2142 Jan  7 17:30 sbin
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 tmp -> private/tmp
+drwxr-xr-x@    9 root       wheel    306 Jan  7 17:38 usr
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 var -> private/var
+poweruser-2:/ poweruser$ sudo mkdir data/db
+mkdir: data: No such file or directory
+poweruser-2:/ poweruser$ ls -la
+total 69
+drwxr-xr-x    37 root       wheel   1326 May 23 17:38 .
+drwxr-xr-x    37 root       wheel   1326 May 23 17:38 ..
+-rw-rw-r--     1 root       admin  10244 May 13 12:25 .DS_Store
+d--x--x--x     9 root       wheel    306 May 23 17:38 .DocumentRevisions-V100
+drwxr-xr-x+    3 root       wheel    102 Jan 12 23:28 .MobileBackups
+drwxr-xr-x     2 root       wheel     68 Dec 12  2014 .PKInstallSandboxManager
+drwxr-xr-x     2 root       wheel     68 Jun 13  2014 .PKInstallSandboxManager (from old Mac)
+drwxr-xr-x@    2 root       wheel     68 Jan 15 20:03 .PKInstallSandboxManager-SystemSoftware
+drwx------     5 root       admin    170 Jan  7 15:26 .Spotlight-V100
+d-wx-wx-wt     2 root       wheel     68 Jan  7 12:46 .Trashes
+srwxrwxrwx     1 root       wheel      0 May 23 17:38 .dbfseventsd
+----------     1 root       admin      0 Sep 28  2016 .file
+drwx------  1738 root       admin  59092 May 23 19:17 .fseventsd
+drwxr-xr-x@    2 root       wheel     68 Jan  7 17:31 .vol
+drwxrwxr-x+  208 root       admin   7072 May 18 10:45 Applications
+drwxrwxr-x     7 root       admin    238 Jan  7 18:11 Incompatible Software
+drwxr-xr-x+   75 root       wheel   2550 Jan  7 17:37 Library
+drwxr-xr-x@    2 root       wheel     68 Jan  7 17:31 Network
+drwxr-xr-x@    4 root       wheel    136 Jan  7 17:25 System
+drwxr-xr-x     7 root       admin    238 Jan  7 18:12 Users
+drwxr-xr-x@    4 root       wheel    136 May 23 17:38 Volumes
+drwxr-xr-x    23 poweruser  staff    782 Jan  2 19:04 anaconda
+drwxr-xr-x@   38 root       wheel   1292 Dec 13 01:56 bin
+drwxrwxr-t@    2 root       admin     68 Jan  7 17:31 cores
+dr-xr-xr-x     3 root       wheel   4196 May 23 17:38 dev
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 etc -> private/etc
+dr-xr-xr-x     2 root       wheel      1 May 23 17:43 home
+-rw-r--r--@    1 root       wheel    313 Sep 23  2016 installer.failurerequests
+dr-xr-xr-x     2 root       wheel      1 May 23 17:43 net
+drwxr-xr-x@    3 root       wheel    102 Aug 11  2014 opt
+drwxr-xr-x@    6 root       wheel    204 Jan  7 17:31 private
+drwxr-xr-x@   63 root       wheel   2142 Jan  7 17:30 sbin
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 tmp -> private/tmp
+drwxr-xr-x@    9 root       wheel    306 Jan  7 17:38 usr
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 var -> private/var
+poweruser-2:/ poweruser$ mkdir data
+mkdir: data: Permission denied
+poweruser-2:/ poweruser$ sudo mkdir data/db
+mkdir: data: No such file or directory
+poweruser-2:/ poweruser$ sudo mkdir data
+poweruser-2:/ poweruser$ cd data
+poweruser-2:data poweruser$ ls -la
+total 0
+drwxr-xr-x   2 root  wheel    68 May 23 20:34 .
+drwxr-xr-x  38 root  wheel  1360 May 23 20:34 ..
+poweruser-2:data poweruser$ mkdir db
+mkdir: db: Permission denied
+poweruser-2:data poweruser$ sudo mkdir db
+poweruser-2:data poweruser$ ls -la
+total 0
+drwxr-xr-x   3 root  wheel   102 May 23 20:34 .
+drwxr-xr-x  38 root  wheel  1360 May 23 20:34 ..
+drwxr-xr-x   2 root  wheel    68 May 23 20:34 db
+poweruser-2:data poweruser$ cd ..
+poweruser-2:/ poweruser$ cd ..
+poweruser-2:/ poweruser$ ls -la
+total 69
+drwxr-xr-x    38 root       wheel   1360 May 23 20:34 .
+drwxr-xr-x    38 root       wheel   1360 May 23 20:34 ..
+-rw-rw-r--     1 root       admin  10244 May 13 12:25 .DS_Store
+d--x--x--x     9 root       wheel    306 May 23 17:38 .DocumentRevisions-V100
+drwxr-xr-x+    3 root       wheel    102 Jan 12 23:28 .MobileBackups
+drwxr-xr-x     2 root       wheel     68 Dec 12  2014 .PKInstallSandboxManager
+drwxr-xr-x     2 root       wheel     68 Jun 13  2014 .PKInstallSandboxManager (from old Mac)
+drwxr-xr-x@    2 root       wheel     68 Jan 15 20:03 .PKInstallSandboxManager-SystemSoftware
+drwx------     5 root       admin    170 Jan  7 15:26 .Spotlight-V100
+d-wx-wx-wt     2 root       wheel     68 Jan  7 12:46 .Trashes
+srwxrwxrwx     1 root       wheel      0 May 23 17:38 .dbfseventsd
+----------     1 root       admin      0 Sep 28  2016 .file
+drwx------  1738 root       admin  59092 May 23 19:17 .fseventsd
+drwxr-xr-x@    2 root       wheel     68 Jan  7 17:31 .vol
+drwxrwxr-x+  208 root       admin   7072 May 18 10:45 Applications
+drwxrwxr-x     7 root       admin    238 Jan  7 18:11 Incompatible Software
+drwxr-xr-x+   75 root       wheel   2550 Jan  7 17:37 Library
+drwxr-xr-x@    2 root       wheel     68 Jan  7 17:31 Network
+drwxr-xr-x@    4 root       wheel    136 Jan  7 17:25 System
+drwxr-xr-x     7 root       admin    238 Jan  7 18:12 Users
+drwxr-xr-x@    4 root       wheel    136 May 23 17:38 Volumes
+drwxr-xr-x    23 poweruser  staff    782 Jan  2 19:04 anaconda
+drwxr-xr-x@   38 root       wheel   1292 Dec 13 01:56 bin
+drwxrwxr-t@    2 root       admin     68 Jan  7 17:31 cores
+drwxr-xr-x     3 root       wheel    102 May 23 20:34 data
+dr-xr-xr-x     3 root       wheel   4196 May 23 17:38 dev
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 etc -> private/etc
+dr-xr-xr-x     2 root       wheel      1 May 23 17:43 home
+-rw-r--r--@    1 root       wheel    313 Sep 23  2016 installer.failurerequests
+dr-xr-xr-x     2 root       wheel      1 May 23 17:43 net
+drwxr-xr-x@    3 root       wheel    102 Aug 11  2014 opt
+drwxr-xr-x@    6 root       wheel    204 Jan  7 17:31 private
+drwxr-xr-x@   63 root       wheel   2142 Jan  7 17:30 sbin
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 tmp -> private/tmp
+drwxr-xr-x@    9 root       wheel    306 Jan  7 17:38 usr
+lrwxr-xr-x@    1 root       wheel     11 Jan  7 17:30 var -> private/var
+poweruser-2:/ poweruser$ sudo chown -R \'id -u\' /data/db
+chown: 'id: illegal user name
+poweruser-2:/ poweruser$ sudo chown -R \`id -u\` /data/db
+chown: `id: illegal user name
+poweruser-2:/ poweruser$ sudo chown -R \`id -u\` data/db
+chown: `id: illegal user name
+poweruser-2:/ poweruser$ cd data
+poweruser-2:data poweruser$ ls -la
+total 0
+drwxr-xr-x   3 root  wheel   102 May 23 20:34 .
+drwxr-xr-x  38 root  wheel  1360 May 23 20:34 ..
+drwxr-xr-x   2 root  wheel    68 May 23 20:34 db
+poweruser-2:data poweruser$ sudo chown -R \`id -u\` db
+chown: `id: illegal user name
+poweruser-2:data poweruser$ cd
+poweruser-2:~ poweruser$ sudo chown -R `id -u` /data/db
+poweruser-2:~ poweruser$ mongod
+2017-05-23T20:43:50.094-0700 I JOURNAL  [initandlisten] journal dir=/data/db/journal
+2017-05-23T20:43:50.095-0700 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2017-05-23T20:43:50.120-0700 I JOURNAL  [durability] Durability thread started
+2017-05-23T20:43:50.120-0700 I JOURNAL  [journal writer] Journal writer thread started
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] MongoDB starting : pid=2300 port=27017 dbpath=/data/db 64-bit host=poweruser-2.local
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] 
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] db version v3.0.2
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] git version: 6201872043ecbbc0a4cc169b5482dcf385fc464f
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] build info: Darwin mci-osx108-10.build.10gen.cc 12.5.0 Darwin Kernel Version 12.5.0: Sun Sep 29 13:33:47 PDT 2013; root:xnu-2050.48.12~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] allocator: system
+2017-05-23T20:43:50.121-0700 I CONTROL  [initandlisten] options: {}
+2017-05-23T20:43:50.125-0700 I INDEX    [initandlisten] allocating new ns file /data/db/local.ns, filling with zeroes...
+2017-05-23T20:43:50.203-0700 I STORAGE  [FileAllocator] allocating new datafile /data/db/local.0, filling with zeroes...
+2017-05-23T20:43:50.203-0700 I STORAGE  [FileAllocator] creating directory /data/db/_tmp
+2017-05-23T20:43:50.453-0700 I STORAGE  [FileAllocator] done allocating datafile /data/db/local.0, size: 64MB,  took 0.248 secs
+2017-05-23T20:43:50.615-0700 I NETWORK  [initandlisten] waiting for connections on port 27017
+2017-05-23T20:47:49.112-0700 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50773 #1 (1 connection now open)
+2017-05-23T20:50:41.266-0700 I INDEX    [conn1] allocating new ns file /data/db/lessondb.ns, filling with zeroes...
+2017-05-23T20:50:41.343-0700 I STORAGE  [FileAllocator] allocating new datafile /data/db/lessondb.0, filling with zeroes...
+2017-05-23T20:50:41.592-0700 I STORAGE  [FileAllocator] done allocating datafile /data/db/lessondb.0, size: 64MB,  took 0.249 secs
+2017-05-23T20:50:41.826-0700 I WRITE    [conn1] insert lessondb.iWantToGoToThere query: { _id: ObjectId('5925031118405801761cca24'), continent: "Africa", country: "Morocco", majorcities: [ "Casablanca", "Fez", "Marrakech" ] } ninserted:1 keyUpdates:0 writeConflicts:0 numYields:0 locks:{ Global: { acquireCount: { w: 2 } }, MMAPV1Journal: { acquireCount: { w: 8 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 70 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 560ms
+2017-05-23T20:50:41.827-0700 I COMMAND  [conn1] command lessondb.$cmd command: insert { insert: "iWantToGoToThere", documents: [ { _id: ObjectId('5925031118405801761cca24'), continent: "Africa", country: "Morocco", majorcities: [ "Casablanca", "Fez", "Marrakech" ] } ], ordered: true } keyUpdates:0 writeConflicts:0 numYields:0 reslen:40 locks:{ Global: { acquireCount: { w: 2 } }, MMAPV1Journal: { acquireCount: { w: 8 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 70 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 563ms
+2017-05-23T21:05:32.447-0700 I INDEX    [conn1] allocating new ns file /data/db/classroom.ns, filling with zeroes...
+2017-05-23T21:05:32.654-0700 I STORAGE  [FileAllocator] allocating new datafile /data/db/classroom.0, filling with zeroes...
+2017-05-23T21:05:33.369-0700 I STORAGE  [FileAllocator] done allocating datafile /data/db/classroom.0, size: 64MB,  took 0.715 secs
+2017-05-23T21:05:33.384-0700 I WRITE    [conn1] insert classroom.students query: { _id: ObjectId('5925068c18405801761cca25'), name: "Jackie", hobbies: [ "pets", "programming" ], os: "linux" } ninserted:1 keyUpdates:0 writeConflicts:0 numYields:0 locks:{ Global: { acquireCount: { w: 2 } }, MMAPV1Journal: { acquireCount: { w: 8 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 60 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 938ms
+2017-05-23T21:05:33.384-0700 I COMMAND  [conn1] command classroom.$cmd command: insert { insert: "students", documents: [ { _id: ObjectId('5925068c18405801761cca25'), name: "Jackie", hobbies: [ "pets", "programming" ], os: "linux" } ], ordered: true } keyUpdates:0 writeConflicts:0 numYields:0 reslen:40 locks:{ Global: { acquireCount: { w: 2 } }, MMAPV1Journal: { acquireCount: { w: 8 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 60 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 4 } } } 938ms
+2017-05-23T21:25:47.262-0700 I NETWORK  [conn1] end connection 127.0.0.1:50773 (0 connections now open)
+^C2017-05-23T21:26:13.560-0700 I CONTROL  [signalProcessingThread] got signal 2 (Interrupt: 2), will terminate after current cmd ends
+2017-05-23T21:26:13.560-0700 I CONTROL  [signalProcessingThread] now exiting
+2017-05-23T21:26:13.560-0700 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2017-05-23T21:26:13.560-0700 I NETWORK  [signalProcessingThread] closing listening socket: 5
+2017-05-23T21:26:13.560-0700 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2017-05-23T21:26:13.561-0700 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2017-05-23T21:26:13.563-0700 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2017-05-23T21:26:13.563-0700 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+2017-05-23T21:26:13.563-0700 I STORAGE  [signalProcessingThread] shutdown: waiting for fs preallocator...
+2017-05-23T21:26:13.563-0700 I STORAGE  [signalProcessingThread] shutdown: final commit...
+2017-05-23T21:26:13.572-0700 I JOURNAL  [signalProcessingThread] journalCleanup...
+2017-05-23T21:26:13.572-0700 I JOURNAL  [signalProcessingThread] removeJournalFiles
+2017-05-23T21:26:13.572-0700 I JOURNAL  [signalProcessingThread] Terminating durability thread ...
+2017-05-23T21:26:13.676-0700 I JOURNAL  [journal writer] Journal writer thread stopped
+2017-05-23T21:26:13.677-0700 I JOURNAL  [durability] Durability thread stopped
+2017-05-23T21:26:13.677-0700 I STORAGE  [signalProcessingThread] shutdown: closing all files...
+2017-05-23T21:26:13.679-0700 I STORAGE  [signalProcessingThread] closeAllFiles() finished
+2017-05-23T21:26:13.680-0700 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2017-05-23T21:26:13.680-0700 I CONTROL  [signalProcessingThread] dbexit:  rc: 0
+poweruser-2:~ poweruser$ 
